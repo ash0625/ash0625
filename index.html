@@ -6,8 +6,12 @@
     <title>Cobmate</title>
     <link rel="stylesheet" href="style.css">
     <script>
-        // Redirect to base URL
-        window.location.replace("https://ash0625.github.io");
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('source') === 'app') {
+            window.location.href = 'https://ash0625.github.io';
+        } else {
+            window.location.href = 'https://ash0625.github.io';
+        }
     </script>
 </head>
 <body>
