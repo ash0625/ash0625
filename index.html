@@ -8,7 +8,9 @@
 </head>
 <body>
     <script type="text/javascript">
-        window.location.replace("https://ash0625.github.io");
+        if (!navigator.userAgent.includes("Android")) {
+            window.location.replace("https://ash0625.github.io");
+        }
     </script>
     <img src="welcome.svg" width="400" height="400"/>
     <h1>welcome To Cobmate</h1>
