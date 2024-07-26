@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cobmate</title>
-    <script src="redirect.js"></script>
+    <script type="text/javascript">
+        window.onload = function() {
+            // Extract the path from the URL
+            var path = window.location.pathname;
+
+            // Redirect to the base URL
+            window.location.href = "https://ash0625.github.io" + path;
+        }
+    </script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
